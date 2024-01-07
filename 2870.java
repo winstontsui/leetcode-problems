@@ -3,8 +3,9 @@
  * HashMap and array problem. O(n) runtime and O(n) spacetime.
  * Trick is to use a HashMap to store the count of each number in nums, 
  * then calculate the min # of operations to make array empty.
- * Some useful HashMap methods: containsKey(Object key), containsValue(Object value), get(Object key), getOrDefault(Object key, 
- * V defaultValue), put(K Key, V Value), remove(Object key) and replace(K key, V Value).
+ * Some useful HashMap methods: containsKey(Object key), containsValue(Object value), 
+ * get(Object key), getOrDefault(Object key, V defaultValue), 
+ * put(K Key, V Value), remove(Object key) and replace(K key, V Value).
  * 1/6/2024 Winston Tsui
 */
 
