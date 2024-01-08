@@ -1,5 +1,5 @@
 /*
- * Leetcode 237: 4Sum. Java. Medium.
+ * Leetcode 237: Delete Node in a Linked List. Java. Medium.
  * Wierdly worded but simple problem. O(n) runtime and O(1) space complexity.
  * There is a much better runtime solution in O(1) time where you simply set 
  * node's val to the next val, then set node.next to be node.next.next.
