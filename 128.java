@@ -20,15 +20,15 @@ class Solution128 {
             arr.add(num);
 
         for (int num : nums) {
-            // This makes this solution O(n): I only compute the length of the sequence at its end. In the worst case, I only go through every element twice.
+            // This makes this solution O(n): I only compute the length of the sequence at
+            // its end. In the worst case, I only go through every element twice.
             if (arr.contains(num + 1))
                 continue;
             int count = 1;
-            while (arr.contains(--num)) 
+            while (arr.contains(--num))
                 count++;
             // I can also do Math.max(ans, count)
             ans = (count > ans) ? count : ans;
-
         }
         return ans;
     }
