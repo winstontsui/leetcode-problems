@@ -1,5 +1,5 @@
 /*
- * Leetcode 19: Remove Nth Node From End of List. Java. Easy.
+ * Leetcode 19: Remove Nth Node From End of List. Java. Medium.
  * Interesting LinkedList problem. O(n) runtime and O(1) space complexity.
  * Trick is to deal with different cases. Count distance remaining to remove the Nth node.
  * 1/9/2024 Winston Tsui
