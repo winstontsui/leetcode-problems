@@ -31,3 +31,26 @@ class Solution424 {
         return longest;
     }
 }
+
+// I am not looping through count in this optimized solution, instead using maxFreq;
+class Solution424Optimized {
+    public int characterReplacement(String s, int k) {
+        int l = 0;
+        int longest = 0;
+        int maxFreq = 0;
+        HashMap<Character, Integer> count = new HashMap<Character, Integer>();
+
+        for (int r = 0; r<s.length(); r++){
+            count.put(s.charAt(r), count.getOrDefault(s.charAt(r), 0) + 1);
+            maxFreq = Math.max(maxFreq, count.get(s.charAt(r)));
+            
+            // We technically only need to change the window when a longer substring appears.
+            while (r-l+1 - maxFreq > k)
+                count.put(s.charAt(l), count.get(s.charAt(l++)) - 1);
+
+            longest = Math.max(longest, r-l+1);
+        }
+
+        return longest;
+    }
+}
