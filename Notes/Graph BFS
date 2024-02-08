@@ -1,0 +1,16 @@
+Breadth-first search (BFS) explores notes and edges of a graph.
+
+Time complexity: O(V+E) Useful for finding shortest path on unweighted graphs
+
+BFS starts at an arbitrary node and explores in a layered fashion through a queue of which node it should visit next.
+
+Use a QUEUE!!!
+
+Ex: A graph, visited array and a queue.
+1. Push starting node 0 into queue. Mark it as visited in the array.
+2. Remove node 0 from the queue. Visit node 0's unvisited neighbors, which are 1 and 2, and add them to queue.
+3. Remove node 1 from queue. Visit node 1's unvisited neighbors. Because there are none, don't add anything to queue.
+4. Remove node 2 from queue. Visit node 2's unvisited neighbors. Because there are none, don't add anything to queue.
+
+For DFS, steps are same, except that we use a stack instead of a queue.
+

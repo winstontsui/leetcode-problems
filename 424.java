@@ -32,7 +32,7 @@ class Solution424 {
     }
 }
 
-// I am not looping through count in this optimized solution, instead using maxFreq;
+// I am not looping through count in this optimized solution, instead, I'm using maxFreq.
 class Solution424Optimized {
     public int characterReplacement(String s, int k) {
         int l = 0;
