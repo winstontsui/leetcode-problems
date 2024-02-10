@@ -1,5 +1,5 @@
 /*
- * Leetcode 417: Group Anagrams. Java. Medium.
+ * Leetcode 49: Group Anagrams. Java. Medium.
  * O(n*m) runtime and O(n*m) space complexity, where n is len of strs and m is 
  * the len of every word. The idea is to count the frequency of characters in 
  * every word and store "related" words as a string. I use a HashMap to group 
