@@ -11,28 +11,29 @@
 import java.util.Collections;
 import java.util.HashMap;
 
-class Solution424 {
+class Solution {
     public int characterReplacement(String s, int k) {
         int l = 0;
         int longest = 0;
         // A count[26] array also suffices.
         HashMap<Character, Integer> count = new HashMap<Character, Integer>();
 
-        for (int r = 0; r<s.length(); r++){
+        for (int r = 0; r < s.length(); r++) {
             count.put(s.charAt(r), count.getOrDefault(s.charAt(r), 0) + 1);
 
             // while (current window is not valid), remove character at position l.
-            while (r-l+1 - Collections.max(count.values()) > k)
+            while (r - l + 1 - Collections.max(count.values()) > k)
                 count.put(s.charAt(l), count.get(s.charAt(l++)) - 1);
 
-            longest = Math.max(longest, r-l+1);
+            longest = Math.max(longest, r - l + 1);
         }
-        
+
         return longest;
     }
 }
 
-// I am not looping through count in this optimized solution, instead, I'm using maxFreq.
+// I am not looping through count in this optimized solution, instead, I'm using
+// maxFreq.
 class Solution424Optimized {
     public int characterReplacement(String s, int k) {
         int l = 0;
@@ -40,15 +41,16 @@ class Solution424Optimized {
         int maxFreq = 0;
         HashMap<Character, Integer> count = new HashMap<Character, Integer>();
 
-        for (int r = 0; r<s.length(); r++){
+        for (int r = 0; r < s.length(); r++) {
             count.put(s.charAt(r), count.getOrDefault(s.charAt(r), 0) + 1);
             maxFreq = Math.max(maxFreq, count.get(s.charAt(r)));
-            
-            // We technically only need to change the window when a longer substring appears.
-            while (r-l+1 - maxFreq > k)
+
+            // We technically only need to change the window when a longer substring
+            // appears.
+            while (r - l + 1 - maxFreq > k)
                 count.put(s.charAt(l), count.get(s.charAt(l++)) - 1);
 
-            longest = Math.max(longest, r-l+1);
+            longest = Math.max(longest, r - l + 1);
         }
 
         return longest;

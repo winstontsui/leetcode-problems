@@ -6,7 +6,7 @@
  * 2/10/2024 Winston Tsui
 */
 
-class Solution206 {
+class Solution {
     // Iterative Solution
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;

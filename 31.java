@@ -7,7 +7,7 @@
  * 1/3/2024 Winston Tsui
 */
 
-class Solution31 {
+class Solution {
     public void nextPermutation(int[] nums) {
         int i;
         int swapWith; // Position of element in nums that I will potentially swap with.

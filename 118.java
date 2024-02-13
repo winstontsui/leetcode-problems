@@ -10,8 +10,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-
-class Solution118 {
+class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ans = new ArrayList();
 
@@ -20,11 +19,11 @@ class Solution118 {
             ans.add(new ArrayList<Integer>(Arrays.asList(1, 1)));
 
         int row = 1;
-        while (row < numRows-1) {
+        while (row < numRows - 1) {
             ArrayList<Integer> curr = new ArrayList<Integer>();
             curr.add(1);
-            for (int i = 1; i<ans.size(); i++)
-                curr.add(ans.get(row).get(i) + ans.get(row).get(i-1));
+            for (int i = 1; i < ans.size(); i++)
+                curr.add(ans.get(row).get(i) + ans.get(row).get(i - 1));
             curr.add(1);
             ans.add(curr);
             row++;

@@ -6,7 +6,7 @@
  * 1/3/2024 Winston Tsui
 */
 
-class Solution74 {
+class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int numRows = matrix.length;
         int left = 0;

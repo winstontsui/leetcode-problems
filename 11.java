@@ -5,19 +5,20 @@
  * 1/26/2024 Winston Tsui
 */
 
-class Solution11 {
+class Solution {
     public int maxArea(int[] height) {
         // Two pointer approach.
         int left = 0;
-        int right = height.length-1;
+        int right = height.length - 1;
         int maxArea = 0;
 
-        while (left < right){
-            int currWidth = right-left;
+        while (left < right) {
+            int currWidth = right - left;
             int currHeight = Math.min(height[left], height[right]);
             maxArea = Math.max(maxArea, currWidth * currHeight);
-            
-            // Update pointers accordingly. If both values are the same height, it doesn't matter what I do.
+
+            // Update pointers accordingly. If both values are the same height, it doesn't
+            // matter what I do.
             if (height[left] > height[right])
                 right--;
             else
@@ -28,26 +29,24 @@ class Solution11 {
     }
 }
 
-
-
 // class Solution11 {
-//     // O(n^2) time, O(1) space. Not Efficient.
-//     public int maxArea(int[] height) {
-//         // Area = length * width.
-//         // width = difference between two pointers.
-//         // height = min(height[left], height[right]).
-//         // Update Area accordingly.
-//         // O(n^2) time, O(1) space. Not Efficient.
-//         int maxArea = 0;
+// // O(n^2) time, O(1) space. Not Efficient.
+// public int maxArea(int[] height) {
+// // Area = length * width.
+// // width = difference between two pointers.
+// // height = min(height[left], height[right]).
+// // Update Area accordingly.
+// // O(n^2) time, O(1) space. Not Efficient.
+// int maxArea = 0;
 
-//         for (int left = 0; left<height.length-1; left++){
-//             for (int right=left+1; right<height.length; right++){
-//                 int rectWidth = right-left;
-//                 int rectHeight = Math.min(height[left], height[right]);
-//                 maxArea = Math.max(rectHeight*rectWidth, maxArea);
-//             }
-//         }
+// for (int left = 0; left<height.length-1; left++){
+// for (int right=left+1; right<height.length; right++){
+// int rectWidth = right-left;
+// int rectHeight = Math.min(height[left], height[right]);
+// maxArea = Math.max(rectHeight*rectWidth, maxArea);
+// }
+// }
 
-//         return maxArea;
-//     }
+// return maxArea;
+// }
 // }

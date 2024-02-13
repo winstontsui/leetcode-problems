@@ -5,7 +5,7 @@
  * 2/10/2024 Winston Tsui
 */
 
-class Solution226 {
+class Solution {
     public TreeNode invertTree(TreeNode root) {
         if (root == null)
             return null;

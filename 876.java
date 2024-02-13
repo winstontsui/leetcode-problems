@@ -5,7 +5,7 @@
  * 1/9/2024 Winston Tsui
 */
 
-class Solution876 {
+class Solution {
     public ListNode middleNode(ListNode head) {
         int count = 0;
         ListNode temp = head;

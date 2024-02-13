@@ -5,7 +5,7 @@
  * 1/9/2024 Winston Tsui
 */
 
-class Solution19 {
+class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head.next == null && n == 1)
             return null;

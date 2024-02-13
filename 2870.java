@@ -11,7 +11,7 @@
 
 import java.util.HashMap;
 
-class Solution2870 {
+class Solution {
     public int minOperations(int[] nums) {
         int total = 0;
         HashMap<Integer, Integer> myMap = new HashMap<Integer, Integer>();

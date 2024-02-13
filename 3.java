@@ -8,7 +8,7 @@
 
 import java.util.HashSet;
 
-class Solution3 {
+class Solution {
     public int lengthOfLongestSubstring(String s) {
         HashSet<Character> mySet = new HashSet<Character>();
         int longestLen = 0;

@@ -8,7 +8,7 @@
 
 import java.util.HashSet;
 
-class Solution128 {
+class Solution {
     public int longestConsecutive(int[] nums) {
         if (nums.length == 0)
             return 0;

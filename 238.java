@@ -6,7 +6,7 @@
  * 2/12/2024 Winston Tsui
 */
 
-class Solution238 {
+class Solution {
     public int[] productExceptSelf(int[] nums) {
         int[] prefix = new int[nums.length];
 

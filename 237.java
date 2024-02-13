@@ -6,10 +6,10 @@
  * 1/7/2024 Winston Tsui
 */
 
-class Solution237 {
+class Solution {
     public void deleteNode(ListNode node) {
-        // Generally I should keep track of head of linklist so it doesn't get wiped out,
-        // but here it isn't necessary.
+        // Generally I should keep track of head of linklist so it doesn't get wiped
+        // out but here it isn't necessary.
         while (node.next != null) {
             node.val = node.next.val;
             if (node.next.next == null) {
