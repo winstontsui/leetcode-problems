@@ -28,6 +28,7 @@ class Solution {
         return numIslands;
     }
 
+    // Used to move up, down, left and right in grid[][].
     private int[][] directions = { { 0, 1 }, { 1, 0 }, { -1, 0 }, { 0, -1 } };
 
     private void bfs(char[][] grid, int r, int c) {
