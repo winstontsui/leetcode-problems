@@ -1,6 +1,6 @@
 Backtracking Algorithm Pseudocode from GeeksForGeeks
 
-void FIND_SOLUTIONS( parameters):
+void FIND_SOLUTIONS(parameters):
 
     if (valid solution):
 
@@ -8,7 +8,7 @@ void FIND_SOLUTIONS( parameters):
 
         Return
 
-    for (all choice):
+    for (all choices):
 
         if (valid choice):
 
