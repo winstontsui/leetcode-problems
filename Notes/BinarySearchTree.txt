@@ -1,0 +1,59 @@
+A Binary search tree has the property where the left child's node has a value less than the node's value. 
+Right child has value greater than node's value.
+
+Advantages: O(log(n)) search complexity. 
+Disadvantages: If the tree is skewed, it is O(n) search complexity.
+
+
+Inserting into a binary search tree starts at root. If the new node's value is greater than the root, 
+go check the right child's value in a recursive manner. Otherwise go down the left child's path.
+Continue until cannot (the current node we are working with is null).
+// Function to insert a new node with
+    // given key in BST
+    static node insert(node node, int key)
+    {
+        // If the tree is empty, return a new node
+        if (node == null)
+            return newNode(key);
+ 
+        // Otherwise, recur down the tree
+        if (key < node.key) {
+            node.left = insert(node.left, key);
+        }
+        else if (key > node.key) {
+            node.right = insert(node.right, key);
+        }
+ 
+        // Return the node
+        return node;
+    }
+
+
+// Function to do inorder traversal of BST
+    static void inorder(node root)
+    {
+        if (root != null) {
+            inorder(root.left);
+            System.out.print(" " + root.key);
+            inorder(root.right);
+        }
+    }
+
+
+// Function that returns the node with minimum
+    // key value found in that tree
+    static node minValueNode(node node)
+    {
+        node current = node;
+ 
+        // Loop down to find the leftmost leaf
+        while (current != null && current.left != null)
+            current = current.left;
+ 
+        return current;
+    }
+
+
+
+
+These notes are from https://www.geeksforgeeks.org/introduction-to-binary-search-tree-data-structure-and-algorithm-tutorials/
