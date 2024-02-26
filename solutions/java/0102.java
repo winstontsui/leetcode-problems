@@ -26,7 +26,7 @@ class Solution {
             int currentLevelSize = neighbors.size();
             ArrayList<Integer> currLevelNumbers = new ArrayList<Integer>();
 
-            // This performs a layered traversal of the tree.
+            // This goes through all nodes in this particular layer.
             for (int i = 0; i < currentLevelSize; i++) {
                 TreeNode currNode = neighbors.remove();
                 currLevelNumbers.add(currNode.val);
