@@ -2,8 +2,7 @@
  * Leetcode 230: Kth Smallest Element in a BST. Java. Medium.
  * In-order BST traversal. O(n) runtime and O(n) spacetime.
  * Use nodesVisited[] to keep track of how many nodes I have visited.
- * Because this is in-order traversal, the kth element I find starting 
- * from the left subtree is the kth smallest element! 
+ * Because this is in-order traversal, the kth element I get to is the kth smallest element! 
  * 2/27/2024 Winston Tsui
 */
 
@@ -21,7 +20,7 @@ class Solution {
             return left;
 
         nodesVisited[0]++;
-        // Checking this current node (inOrderTraversal!!)
+        // Checking if I traversed through k nodes (inOrderTraversal!!)
         if (nodesVisited[0] == k)
             return root.val;
 

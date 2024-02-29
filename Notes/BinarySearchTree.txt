@@ -54,6 +54,21 @@ Continue until cannot (the current node we are working with is null).
     }
 
 
-
+Inorder traversal: Traverse left subtree recursively, then visit the root, then traverse the right subtree recursively.
+// Inorder Traversal
+    public static void printInorder(Node node)
+    {
+        if (node == null)
+            return;
+ 
+        // Traverse left subtree
+        printInorder(node.left);
+ 
+        // Visit node
+        System.out.print(node.data + " ");
+ 
+        // Traverse right subtree
+        printInorder(node.right);
+    }
 
 These notes are from https://www.geeksforgeeks.org/introduction-to-binary-search-tree-data-structure-and-algorithm-tutorials/
