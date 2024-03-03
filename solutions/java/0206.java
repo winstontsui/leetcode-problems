@@ -22,20 +22,20 @@ class Solution {
     }
 
     // /*
-    // * Recursive solution: O(n) time and space complexity.
-    // * As always, idea is to break down problem into subproblems
-    // * and base case. In this case, it is when head.next==null.
-    // * Keep track of end of linkedlist because this
-    // * is what we are returning.
-    // */
+    //  * Recursive solution: O(n) time and space complexity.
+    //  * As always, idea is to break down problem into subproblems
+    //  * and base case. In this case, it is when head.next==null.
+    //  * Keep track of end of linkedlist because this
+    //  * is what we are returning.
+    //  */
     // public ListNode reverseList(ListNode head) {
-    // if (head == null || head.next == null)
-    // return head;
-    // ListNode next = head.next;
-    // ListNode startOfNewList = reverseList(head.next);
-    // next.next = head;
-    // head.next = null;
-    // return startOfNewList;
+    //     if (head == null || head.next == null)
+    //         return head;
+    //     ListNode next = head.next;
+    //     ListNode startOfNewList = reverseList(head.next);
+    //     next.next = head;
+    //     head.next = null;
+    //     return startOfNewList;
     // }
 }
 
