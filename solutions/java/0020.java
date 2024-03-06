@@ -1,8 +1,8 @@
 /*
  * Leetcode 20: Valid Parentheses. Java. Easy.
  * O(n) runtime and O(n) spacetime solution.
- * Use a map to store pairs of parentheses and a stack throughout processing of String s
- * to verify that parentheses match--if they do, pop the stack. If elements remain at the end, the string is not valid.
+ * Use a HashMap to store pairs of parentheses and a stack throughout processing of String s to verify 
+ * that parentheses match--if they do, pop the stack. If elements remain at the end, s is not valid.
  * 3/5/2024 Winston Tsui
 */
 
@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 
-// A more concise solution that takes advantage of hardcoded parentheses values through a HashMap.
+// Concise solution that takes deals with hardcoded parentheses values through a HashMap.
 class Solution {
     public boolean isValid(String s) {
         Deque<Character> stack = new ArrayDeque<Character>();

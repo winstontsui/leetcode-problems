@@ -1,0 +1,29 @@
+Iterable (Interface)
+Collection (Interface) extends Iterable
+Queue (Interface) extends Collection          PriorityQueue (Class) implements Queue
+Deque (Interface) extends Queue               LinkedList (Class) implements Deque, ArrayDeque (Class) implements Deque
+
+
+
+Deque<String> dq = new ArrayDeque<String>();
+
+Operations using the Deque Interface and the ArrayDeque class:
+
+1. add
+    dq.push("For");
+    dq.add("For");                          // Adds to BACK of deque.
+    dq.addFirst("Geeks");
+    dq.addLast("Geeks");
+
+2. remove
+    System.out.println(dq.pop());           // Removes from FRONT of deque.
+    System.out.println(dq.poll());
+    System.out.println(dq.pollFirst());
+    System.out.println(dq.pollLast());
+
+
+3. Iterating 
+        Iterator itr = dq.iterator();       // descendingIterator();
+        while (itr.hasNext()) 
+            System.out.print(itr.next() + " ");
+        

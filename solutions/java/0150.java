@@ -12,7 +12,6 @@ import java.util.Set;
 
 class Solution {
     public int evalRPN(String[] tokens) {
-
         // Here, I add to front, so add() operation remains the same,
         // but remove from the back, so use removeLast() because of stack property.
         Deque<Integer> operandStack = new ArrayDeque<>();
