@@ -7,7 +7,7 @@ Deque (Interface) extends Queue               LinkedList (Class) implements Dequ
 
 Deque<String> dq = new ArrayDeque<String>();
 
-Operations using the Deque Interface and the ArrayDeque class:
+Operations using the Deque Interface and ArrayDeque class:
 
 1. add
     dq.push("For");
@@ -26,4 +26,7 @@ Operations using the Deque Interface and the ArrayDeque class:
         Iterator itr = dq.iterator();       // descendingIterator();
         while (itr.hasNext()) 
             System.out.print(itr.next() + " ");
-        
+
+
+
+These notes are from https://www.geeksforgeeks.org/deque-interface-java-example/
