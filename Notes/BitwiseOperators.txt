@@ -1,0 +1,11 @@
+Bitwise Operators: 
+Bitwise OR              |
+Bitwise AND             &
+Bitwise XOR             ^        1^1 -> 0
+Bitwise Complement      ~
+
+Shift Operators:
+Signed Right shift operator (>>)
+Unsigned Right shift operator (>>>)
+Left shift operator(<<)
+Unsigned Left shift operator (<<<)
