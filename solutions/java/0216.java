@@ -2,8 +2,8 @@
  * Leetcode 216: Graph Valid Tree. Java. Medium.
  * Challenging Graph Problem. O(E + V) runtime and O(E + V) space complexity.
  * A tree is a special undirected graph that has no cycle and whose every node is connected.
- * Use dfs to check for cycles and put all nodes in a HashSet. Check at the end that
- * all n nodes have been traversed.
+ * Start at node 0. Use dfs to check for cycles and to put all nodes in a HashSet. 
+ * Check at the end that all n nodes have been traversed (connected property).
  * 3/12/2024 Winston Tsui
 */
 
