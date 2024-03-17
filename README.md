@@ -15,6 +15,8 @@
 [MIT Missing Semester in CS Education](https://www.youtube.com/watch?v=Z56Jmr9Z34Q)
 **Currently on Lecture 1, 16 minutes in**
 
+[Get All GitHub Badges](https://www.youtube.com/watch?v=oJWFfp3sGYA)
+
 Check remote repository I'm pushing and pulling from: `git remote -v`
 
 Change fetch URL for origin: `git remote set-url --push origin <new-url>`
