@@ -108,7 +108,6 @@ Leetcode 100 Is Same Tree
 
 ![Leetcode 100 Is Same Tree](/Notes/Images/Leetcode100IsSameTree.jpg)
 
-
 Leetcode 78 Subsets
 
 ![Leetcode 78 Subsets](/Notes/Images/Leetcode78Subsets.jpg)
