@@ -22,7 +22,7 @@ class Solution {
         while (!stack.isEmpty())
             str.append(stack.pop());
 
-        // Reverse contents in stack and put them in str.
+        // Stack components are reversed 
         return str.reverse().toString();
 
         // // O(n^2) time complexity because of substring, O(1) space complexity.
