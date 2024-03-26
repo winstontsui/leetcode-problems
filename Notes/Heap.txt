@@ -1,0 +1,9 @@
+import java.util.PriorityQueue;
+
+// Creates a min heap
+PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+// Creates a max heap
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+
+Common Operations: add(element), poll(), peek(), isEmpty(), size(), clear()
