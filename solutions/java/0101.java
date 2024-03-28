@@ -2,8 +2,7 @@
  * Leetcode 101: Symmetric Tree. Java. Easy.
  * O(n) runtime and O(n) space complexity. 
  * Recursive solution. At a given point, compare this tree against itself. 
- * Do the roots equal and does the left subtree equal the right subtree?
- * 
+ * Does the roots' val equal and does the left subtree match the right subtree?
  * 3/26/2024 Winston Tsui
 */
 
