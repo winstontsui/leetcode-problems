@@ -2,7 +2,7 @@
  * Leetcode 53: Maximum Subarray. Java. Medium.
  * O(n) runtime and O(1) space complexity.
  * Use a variable currSum to track sum up to a certain point. At any given point,
- * if the sum is less than 0, it cannot be used in later subarrays to achieve max sum, so disregard it.
+ * if the sum is less than 0, it cannot be used in later subarrays to achieve max sum, so reset it.
  * 4/7/2024 Winston Tsui
 */
 
@@ -14,7 +14,7 @@ class Solution {
             currSum += num;
             maxSum = Math.max(maxSum, currSum);
 
-            // If the sum up to this point is negative, remove it as it won't help us later.
+            // If the sum up to this point is negative, it can't be part of future subarrays, so reset it.
             if (currSum < 0)
                 currSum = 0;
         }
