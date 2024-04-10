@@ -6,7 +6,12 @@
  * 4/10/2024 Winston Tsui
 */
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 class Solution {
+
+    // Recursive Solution
     public int sumOfLeftLeaves(TreeNode root) {
         return sumOfLeftLeaves(root, false);
     }
@@ -18,6 +23,28 @@ class Solution {
             return root.val;
         return sumOfLeftLeaves(root.left, true) + sumOfLeftLeaves(root.right, false);
     }
+
+    // // Iterative Solution (Preorder traversal)
+    // public int sumOfLeftLeaves(TreeNode root) {
+    //     Deque<TreeNode> stack = new ArrayDeque<TreeNode>();
+    //     stack.add(root);
+    //     int sum = 0;
+
+    //     while (!stack.isEmpty()) {
+    //         TreeNode currNode = stack.remove();
+    //         if (currNode.left != null) {
+    //             if (currNode.left.left == null && currNode.left.right == null)
+    //                 sum += currNode.left.val;
+    //         }
+
+    //         if (currNode.right != null)
+    //             stack.addFirst(currNode.right);
+    //         if (currNode.left != null)
+    //             stack.addFirst(currNode.left);
+    //     }
+
+    //     return sum;
+    // }
 
 }
 
