@@ -2,7 +2,7 @@
  * Leetcode 404: Sum of Left Leaves. Java. Easy.
  * O(n) runtime and O(n) space complexity. O(log(n)) space if this is a balanced binary tree.
  * There are two main ways to solve: Pass in to the recursive call whether this is
- * a left subtree, or check if the root's left child is a left subtree every time.
+ * a left subtree, or check if the root's left child is a leaf every time.
  * 4/10/2024 Winston Tsui
 */
 
