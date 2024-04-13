@@ -2,8 +2,8 @@
  * Leetcode 139: Word Break. Java. Medium.
  * O(n*m*k) runtime and O(n) space complexity, where m is wordDict.length and k is average length of words.
  * Dynamic Programming problem where I create a boolean[] canBreak array. Start from back of s.
- * If a word w in wordDict doesn't go out of bounds, matches s from index i to i+w.length(), 
- * and canBreak[i+w.length()] is segmentable, mark canBreak[i] as segmentable.
+ * If a word w in wordDict doesn't go out of bounds, matches s from index i to i + w.length(), 
+ * and canBreak[i + w.length()] is segmentable, mark canBreak[i] as segmentable.
  * 4/12/2024 Winston Tsui
 */
 
