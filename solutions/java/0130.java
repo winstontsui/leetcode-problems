@@ -24,7 +24,7 @@ class Solution {
                 dfs(board.length - 1, c, board);
         }
 
-        // Mark all 'T' elements as 'O'
+        // Revert changed and unchanged elements back
         for (int r = 0; r < board.length; r++) {
             for (int c = 0; c < board[0].length; c++) {
                 if (board[r][c] == 'O')
