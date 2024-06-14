@@ -2,7 +2,7 @@
  * Leetcode 355: Design Twitter. Java. Medium.
  * O(klogk) runtime and O(n) space complexity.
  * Nasty problem. Use a max-heap to merge the latest tweets from the user 
- * and their followed accounts by iteratively extracting the most recent tweets
+ * and their followed accounts by iteratively extracting the most recent tweets.
  * 6/14/2024 Winston Tsui
  */
 
