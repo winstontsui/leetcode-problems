@@ -3,7 +3,7 @@
  * Amortized O(1) runtime and O(n) space complexity.
  * The second stack holds everything in stack 1 in reverse whenever we pop or peek. The idea is to push onto stack 1 
  * and pop/peek from stack 2, where contents are reversed, so we can remove elements in the "front" of the stack.
- * 6/17/2024 Winston Tsui
+ * 6/18/2024 Winston Tsui
  */
 
 import java.util.Stack;
