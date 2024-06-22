@@ -1,6 +1,6 @@
 /*
  * Leetcode 496: Next Greater Element I. Java. Easy.
- * O(n+m) runtime and O(n) space complexity.
+ * O(n) runtime and O(n) space complexity.
  * Nightmarish problem. Use a HashMap mapping each number in nums2 to its next greater element.
  * Use a monotonically increasing stack but traverse through nums2 backwards to get the next greater element.
  * 6/21/2024 Winston Tsui
