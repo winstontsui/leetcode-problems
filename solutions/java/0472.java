@@ -24,8 +24,7 @@ class Solution {
             canConcatenate[0] = true;
 
             for (int i = 0; i < word.length(); i++) {
-                // If the current prefix cannot be formed, there's no point in checking for
-                // words.
+                // If the current prefix cannot be formed, there's no point in checking for words.
                 if (!canConcatenate[i])
                     continue;
 
