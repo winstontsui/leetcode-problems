@@ -16,16 +16,10 @@ class Solution {
             // Odd indicies must have greater values than previous even indicies.
             // Even indicies must have smaller values than previous odd indicies.
             // Otherwise, swap nums[i] with nums[i-1].
-            if (i % 2 == 1 && nums[i] < nums[i - 1]) {
+            if (i % 2 == 1 && nums[i] < nums[i - 1] || i % 2 == 0 && nums[i] > nums[i - 1]) {
                 int temp = nums[i];
                 nums[i] = nums[i - 1];
                 nums[i - 1] = temp;
-            } else {
-                if (i % 2 == 0 && nums[i] > nums[i - 1]) {
-                    int temp = nums[i];
-                    nums[i] = nums[i - 1];
-                    nums[i - 1] = temp;
-                }
             }
         }
     }
