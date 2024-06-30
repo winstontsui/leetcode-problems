@@ -1,7 +1,8 @@
 /*
  * Leetcode 286: Walls and Gates. Java. Medium.
  * O(n*m) runtime and O(n*m) space complexity.
- * Determine coordinates of gates and store in a deque. Do BFS to fill each empty room with the distance to its nearest gate one by one.
+ * Determine coordinates of gates and store in a deque. Perform BFS to fill each empty room with the distance 
+ * to its nearest gate in a layered traversal.
  * 6/30/2024 Winston Tsui
 */
 
