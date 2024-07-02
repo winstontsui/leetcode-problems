@@ -29,6 +29,20 @@ class Solution {
     }
 }
 
+// // Recursive Solution: Starting from the last pair, swap and return the second reversed element. 
+// // O(n) time and O(n) space complexity.
+// class Solution {
+//     public ListNode swapPairs(ListNode head) {
+//         if (head == null || head.next == null)
+//             return head;
+//         ListNode rest = swapPairs(head.next.next);
+//         ListNode second = head.next;
+//         second.next = head;
+//         head.next = rest;
+//         return second;
+//     }
+// }
+
 class ListNode {
 
     int val;
