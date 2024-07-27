@@ -1,7 +1,7 @@
 /*
  * Leetcode 2971: Find Polygon With the Largest Perimeter. Java. Medium.
- * O(nlogn) runtime and O(nlogn) space complexity.
- * Sort nums. Working backwards, determine if nums[0] to nums[i] is a valid polygon, returning the perimeter if it is.
+ * O(nlogn) runtime and O(logn) space complexity.
+ * Sort nums. Working backwards, determine whether nums[0] to nums[i] is a valid polygon, returning the perimeter if it is.
  * 7/18/2024 Winston Tsui
 */
 
