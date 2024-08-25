@@ -10,7 +10,7 @@ import java.util.Deque;
 
 class Solution {
     public int findBottomLeftValue(TreeNode root) {
-        Deque<TreeNode> deque = new ArrayDeque<TreeNode>();
+        Deque<TreeNode> deque = new ArrayDeque<>();
         int ans = root.val;
         deque.add(root);
         // bfs level order traversal
