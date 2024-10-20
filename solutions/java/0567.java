@@ -6,12 +6,11 @@
  * 6/10/2024 Winston Tsui
  */
 
-class Solution {
+ class Solution {
 
     public boolean checkInclusion(String s1, String s2) {
-        if (s1.length() > s2.length()) {
+        if (s1.length() > s2.length())
             return false;
-        }
 
         int[] chars = new int[26];
 
@@ -20,16 +19,14 @@ class Solution {
             chars[s2.charAt(i) - 'a']--;
         }
 
-        // Go one character at a time starting from s1.length. 
+        // Go one character at a time starting from s1.length.
         for (int i = s1.length(); i < s2.length() + 1; i++) {
             // Checks if everything in chars is 0.
             for (int num = 0; num < chars.length; num++) {
-                if (chars[num] != 0) {
+                if (chars[num] != 0)
                     break;
-                }
-                if (num == 25) {
+                if (num == 25)
                     return true;
-                }
             }
 
             // Increment char @index i count and decrement char @(i-s1.length) count.
