@@ -32,27 +32,26 @@ class Solution {
     }
 }
 
-// I am not looping through count in this optimized solution, instead, I'm using
-// maxFreq.
-class Solution424Optimized {
-    public int characterReplacement(String s, int k) {
-        int l = 0;
-        int longest = 0;
-        int maxFreq = 0;
-        HashMap<Character, Integer> count = new HashMap<Character, Integer>();
+// class Solution {
+//     public int characterReplacement(String s, int k) {
+//         // HashMap to track characters and their frequency in window.
+//         HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        
+//         int maxCurrCount = 0; // Most frequent number of occurances for a character.
+//         int maxLen = 0;
+//         int l = 0;
 
-        for (int r = 0; r < s.length(); r++) {
-            count.put(s.charAt(r), count.getOrDefault(s.charAt(r), 0) + 1);
-            maxFreq = Math.max(maxFreq, count.get(s.charAt(r)));
-
-            // We technically only need to change the window when a longer substring
-            // appears.
-            while (r - l + 1 - maxFreq > k)
-                count.put(s.charAt(l), count.get(s.charAt(l++)) - 1);
-
-            longest = Math.max(longest, r - l + 1);
-        }
-
-        return longest;
-    }
-}
+//         for (int r = 0; r < s.length(); r++){
+//             map.put(s.charAt(r), map.getOrDefault(s.charAt(r), 0) + 1);
+//             maxCurrCount = Math.max(maxCurrCount, map.get(s.charAt(r)));
+            
+//             // Shrink window from the left as necessary.
+//             while (r - l + 1 - maxCurrCount > k){
+//                 map.put(s.charAt(l), map.get(s.charAt(l)) - 1);
+//                 l++;
+//             }
+//             maxLen = Math.max(maxLen, r - l + 1);
+//         }
+//         return maxLen;
+//     }
+// }
