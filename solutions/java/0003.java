@@ -31,3 +31,20 @@ class Solution {
         return longestLen;
     }
 }
+
+// class Solution {
+//     public int lengthOfLongestSubstring(String s) {
+//         int longestLen = 0;
+//         int l = 0;
+//         HashSet<Character> charSet = new HashSet<>();
+
+//         for (int r = 0; r < s.length(); r++){
+//             while (charSet.contains(s.charAt(r))){
+//                 charSet.remove(s.charAt(l));
+//             }
+//             charSet.add(s.charAt(r));
+//             longestLen = Math.max(longestLen, r - l + 1);
+//         }
+//         return longestLen;
+//     }
+// }
