@@ -25,3 +25,21 @@ class Solution {
         return prefix;
     }
 }
+
+// class Solution {
+//     public int[] productExceptSelf(int[] nums) {
+//         int[] ans = new int[nums.length];
+//         ans[0] = 1;
+//         // Step 1: Calculate left products. (prefix sum of nums[i] which is up to i-1.)
+//         for (int i = 1; i < nums.length; i++)
+//             ans[i] = ans[i - 1] * nums[i - 1];
+
+//         // Step 2: Calculate right products and multiply with left products
+//         int rightProduct = 1;
+//         for (int i = nums.length - 1; i >= 0; i--) {
+//             ans[i] *= rightProduct;
+//             rightProduct *= nums[i];
+//         }
+//         return ans;
+//     }
+// }
