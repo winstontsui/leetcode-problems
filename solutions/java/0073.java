@@ -47,3 +47,28 @@ class Solution {
         }
     }
 }
+
+// // Inefficient O(n+m) runtime solution
+// class Solution {
+//     public void setZeroes(int[][] matrix) {
+//         Set<Integer> rowsNeedToChange = new HashSet<>();
+//         Set<Integer> colsNeedToChange = new HashSet<>();
+//         for (int r = 0; r < matrix.length; r++){
+//             for (int c = 0; c < matrix[0].length; c++){
+//                 if (matrix[r][c] == 0){
+//                     rowsNeedToChange.add(r);
+//                     colsNeedToChange.add(c);
+//                 }
+//             }
+//         }
+        
+//         for (Integer r : rowsNeedToChange)
+//             for (int c = 0; c < matrix[0].length; c++)
+//                 matrix[r][c] = 0;
+
+//         for (Integer c : colsNeedToChange)
+//             for (int r = 0; r < matrix.length; r++)
+//                 matrix[r][c] = 0;
+
+//     }
+// }
