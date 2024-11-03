@@ -10,10 +10,10 @@ class Solution {
         int len = nums.length;
         int sum = 0;
 
-        // int expectedSum = (len * (len + 1) /2); // Using the sum identity
-        int expectedSum = 0;
-        while (len > -1)
-            expectedSum += len--;
+        int expectedSum = (len * (len + 1) / 2); // Using sum identity
+        // int expectedSum = 0;
+        // while (len > -1)
+        //     expectedSum += len--;
 
         for (int num : nums)
             sum += num;
