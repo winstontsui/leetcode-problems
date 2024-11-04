@@ -31,3 +31,27 @@ class Solution {
         }
     }
 }
+
+// class Solution {
+//     public List<List<Integer>> subsets(int[] nums) {
+//         List<List<Integer>> answer = new ArrayList<>();
+//         backtrack(nums, 0, new ArrayList<>(), answer);
+//         return answer;
+//     }
+
+//     private void backtrack(int[] nums, int index, List<Integer> curr, List<List<Integer>> answer) {
+//         if (index == nums.length) {
+//             List<Integer> ans = new ArrayList<>();
+//             for (Integer i : curr)
+//                 ans.add(i);
+//             answer.add(ans);
+//             return;
+//         }
+//         // 2 choices: Include current character or don't.
+//         backtrack(nums, index + 1, curr, answer);
+
+//         curr.add(nums[index]);
+//         backtrack(nums, index + 1, curr, answer);
+//         curr.remove(curr.size() - 1);
+//     }
+// }
