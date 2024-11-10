@@ -43,3 +43,27 @@ class Solution {
         return false;
     }
 }
+
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+
+        // Determine possible row with binary search
+        int l = 0;
+        int r = matrix.length * matrix[0].length - 1;
+
+        while (l <= r) {
+            int m = (l + r) / 2;
+            int n = matrix[0].length;
+            int conversion = matrix[m / n][m % n]; // Converting 1D mid index to 2D index
+
+            if (conversion == target)
+                return true; // Target found
+            else if (target < conversion)
+                r = m - 1; // Search left subspace
+            else
+                l = m + 1; // Search right subspace
+        }
+        return false;
+
+    }
+}
