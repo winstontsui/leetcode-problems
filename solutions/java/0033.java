@@ -35,3 +35,31 @@ class Solution {
         return -1;
     }
 }
+
+// class Solution {
+//     public int search(int[] nums, int target) {
+//         int l = 0;
+//         int r = nums.length - 1;
+//         while (l <= r) {
+//             int mid = (l + r) / 2;
+
+//             if (nums[mid] == target)
+//                 return mid;
+
+//             if (nums[l] <= nums[mid]) { // If the left side is sorted
+//                 if (nums[l] <= target && target <= nums[mid])
+//                     r = mid - 1; // Target is in the left half
+//                 else
+//                     l = mid + 1; // Target is in the right half
+//             } else { // If the right side is sorted
+//                 if (nums[mid] <= target && target <= nums[r])
+//                     l = mid + 1; // Target is in the right half
+//                 else
+//                     r = mid - 1; // Target is in the left half
+//             }
+//         }
+
+//         // Target not found
+//         return -1;
+//     }
+// }
