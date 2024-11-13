@@ -53,3 +53,35 @@ class Solution {
 
     }
 }
+
+// class Solution {
+//     public int numIslands(char[][] grid) {
+//         int totalIslands = 0;
+//         int[][] directions = new int[][] { { 0, 1 }, { 1, 0 }, { -1, 0 }, { 0, -1 } };
+//         Deque<Integer[]> deque = new ArrayDeque<>();
+
+//         for (int r = 0; r < grid.length; r++) {
+//             for (int c = 0; c < grid[0].length; c++) {
+//                 if (grid[r][c] == '1') {
+//                     grid[r][c] = '2';
+//                     totalIslands++;
+//                     deque.add(new Integer[] { r, c });
+//                 }
+//                 while (!deque.isEmpty()) {
+//                     Integer[] land = deque.remove();
+//                     for (int[] direction : directions) {
+//                         Integer[] neighbor = new Integer[] { land[0] + direction[0], land[1] + direction[1] };
+//                         if (neighbor[0] > -1 && neighbor[1] > -1 && neighbor[0] < grid.length
+//                                 && neighbor[1] < grid[0].length && grid[neighbor[0]][neighbor[1]] == '1') {
+//                             grid[neighbor[0]][neighbor[1]] = '2'; // Mark as visited
+//                             deque.add(new Integer[] { neighbor[0], neighbor[1] });
+//                         }
+
+//                     }
+//                 }
+
+//             }
+//         }
+//         return totalIslands;
+//     }
+// }
