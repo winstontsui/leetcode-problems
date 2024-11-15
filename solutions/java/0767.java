@@ -3,7 +3,7 @@
  * O(n log k) runtime and O(n) space complexity.
  * Greedy algorithm using a max heap (PriorityQueue) to construct a valid arrangement of characters
  * where no two adjacent characters are the same. Returns "" if such an arrangement is impossible.
- * 11/14/2024 Winston Tsui
+ * 11/15/2024 Winston Tsui
  */
 
 import java.util.PriorityQueue;
