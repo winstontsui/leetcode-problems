@@ -10,6 +10,7 @@
 import java.util.HashMap;
 import java.util.TreeMap;
 
+// TODO: Implement a O(n) runtime sliding window solution
 class Solution {
     public int maxFrequency(int[] nums, int k, int numOperations) {
         // nums = [0,11,16,20], k = 5, numOperations = 3
