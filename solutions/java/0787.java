@@ -1,4 +1,12 @@
-
+/*
+ * Leetcode 787: Cheapest Flights Within K Stops. Java. Medium.
+ * O(E + V log V) runtime using Dijkstra's algorithm with a Min-Heap.
+ * Build a graph using a HashMap to store outgoing flights and their costs.
+ * Use a Priority Queue to explore paths in increasing cost order while respecting the stop limit (k stops).
+ * Prune paths where the number of stops exceeds k or if a better (lower stops) path has already been processed.
+ * Insights: Combining Dijkstra's algorithm with a stop constraint efficiently finds the cheapest flight cost.
+ * 12/17/2024 Winston Tsui
+*/
 
 import java.util.*;
 

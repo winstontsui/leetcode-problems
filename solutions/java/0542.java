@@ -49,3 +49,35 @@ class Solution {
         return mat;
     }
 }
+
+// // DP solution: Even better O(1) space complexity
+// class Solution {
+//     public int[][] updateMatrix(int[][] mat) {
+//         int rows = mat.length;
+//         int cols = mat[0].length;
+//         int maxDist = rows + cols;
+
+//         // Go top left to bottom right, calculating distance.
+//         for (int r = 0; r < rows; r++) {
+//             for (int c = 0; c < cols; c++) {
+//                 if (mat[r][c] != 0) {
+//                     int left = c > 0 ? mat[r][c - 1] : maxDist;
+//                     int top = r > 0 ? mat[r - 1][c] : maxDist;
+//                     mat[r][c] = Math.min(left, top) + 1;
+//                 }
+//             }
+//         }
+
+//         // Go bottom right to top left, calculating distance.
+//         for (int r = rows - 1; r >= 0; r--) {
+//             for (int c = cols - 1; c >= 0; c--) {
+//                 if (mat[r][c] != 0) {
+//                     int right = c < cols - 1 ? mat[r][c + 1] : maxDist;
+//                     int bottom = r < rows - 1 ? mat[r + 1][c] : maxDist;
+//                     mat[r][c] = Math.min(mat[r][c], Math.min(right, bottom) + 1);
+//                 }
+//             }
+//         }
+//         return mat;
+//     }
+// }
