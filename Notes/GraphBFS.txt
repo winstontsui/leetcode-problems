@@ -13,3 +13,22 @@ Ex: A graph, visited array and a queue.
 4. Remove node 2 from queue. Visit node 2's unvisited neighbors. Because there are none, don't add anything to queue.
 
 For DFS, steps are same, except that we use a stack instead of a queue.
+
+
+Dijkstra's algorithm is a graph search algorithm used to find the shortest path from a source node 
+to all other nodes in a graph with non-negative edge weights.
+
+function Dijkstra(Graph, source):
+    Initialize dist[] array with ∞, except dist[source] = 0
+    Initialize a priority queue (min-heap) with (source, 0)
+
+    while priorityQueue is not empty:
+        currentNode ← priorityQueue.pop()  # Node with the smallest distance
+        for each neighbor of currentNode:
+            edgeWeight = weight(currentNode, neighbor)
+            tentativeDist = dist[currentNode] + edgeWeight
+            if tentativeDist < dist[neighbor]:  # Found a shorter path
+                dist[neighbor] = tentativeDist
+                priorityQueue.push((neighbor, dist[neighbor]))
+    
+    return dist
