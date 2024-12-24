@@ -15,8 +15,11 @@ Ex: A graph, visited array and a queue.
 For DFS, steps are same, except that we use a stack instead of a queue.
 
 
-Dijkstra's algorithm is a graph search algorithm used to find the shortest path from a source node 
-to all other nodes in a graph with non-negative edge weights.
+
+Dijkstra's algorithm is an algorithm used to find the shortest path between a starting node and all other nodes in a weighted graph, 
+essentially calculating the shortest distance from one point to every other point in a network, like a road map, 
+by iteratively selecting the closest unvisited node and updating distances based on its connections; 
+it works best when all edge weights are non-negative.
 
 function Dijkstra(Graph, source):
     Initialize dist[] array with ∞, except dist[source] = 0
