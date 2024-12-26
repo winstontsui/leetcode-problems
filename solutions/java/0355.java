@@ -6,13 +6,7 @@
  * 6/14/2024 Winston Tsui
  */
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
-
+import java.util.*;
 
 class Twitter {
     HashMap<Integer, HashSet<Integer>> isFollowing = new HashMap<>();
@@ -37,7 +31,7 @@ class Twitter {
 
     public List<Integer> getNewsFeed(int userId) {
         List<Integer> newsFeed = new ArrayList<>();
-        Queue<int[]> heap = new PriorityQueue<int[]>((a, b) -> b[0] - a[0]); // Max heap based on tweet's chronological order
+        Queue<int[]> heap = new PriorityQueue<>((a, b) -> b[0] - a[0]); // Max heap based on tweet's chronological order
         HashSet<Integer> followedAccounts = isFollowing.get(userId);
         if (followedAccounts == null) 
             followedAccounts = new HashSet<>();
