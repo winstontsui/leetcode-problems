@@ -4,7 +4,7 @@
  * Use a two-pointer technique to iterate through two sorted interval lists and find their intersections.
  * Intervals are added to the result when they overlap, and pointers are moved based on the smaller endpoint.
  * Insights: The key is to compute the intersection range using max(start) and min(end) and advance pointers appropriately to maintain efficiency.
- * 12/24/2024 Winston Tsui
+ * 12/26/2024 Winston Tsui
  */
 
 import java.util.*;
