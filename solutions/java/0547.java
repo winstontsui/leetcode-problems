@@ -13,7 +13,7 @@ class Solution {
     public int findCircleNum(int[][] isConnected) {
         int numProvinces = 0;
         HashSet<Integer> visited = new HashSet<>();
-        Queue<Integer> deque = new ArrayDeque<Integer>();
+        Queue<Integer> deque = new ArrayDeque<>();
 
         for (int i = 0; i < isConnected[0].length; i++) {
             if (!visited.contains(i)) {
