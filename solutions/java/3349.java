@@ -6,7 +6,7 @@
  * 12/2/2024 Winston Tsui
  */
 
-import java.util.List;
+import java.util.*;
 
 class Solution {
     public boolean hasIncreasingSubarrays(List<Integer> nums, int k) {
