@@ -29,7 +29,7 @@ class Solution {
             if (words.containsKey(encodedWord))
                 words.get(encodedWord).add(s);
             else {
-                ArrayList<String> pattern = new ArrayList<String>();
+                ArrayList<String> pattern = new ArrayList<>();
                 pattern.add(s);
                 words.put(encodedWord, pattern);
             }
