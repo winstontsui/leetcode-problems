@@ -33,6 +33,26 @@ class Solution {
     }
 }
 
+// // Recursive Approach, O(n) time complexity
+// class Solution {
+//     public Node connect(Node root) {
+//         if (root == null || root.left == null)
+//             return root;
+
+//         // Connect left child to right child
+//         root.left.next = root.right;
+
+//         // Connect right child to the next node's left child
+//         if (root.next != null)
+//             root.right.next = root.next.left;
+
+//         connect(root.left);
+//         connect(root.right);
+//         return root;
+//     }
+// }
+
+// // Iterative Deque Suboptimal O(n) time complexity
 // class Solution {
 //     public Node connect(Node root) {
 //         if (root == null)
