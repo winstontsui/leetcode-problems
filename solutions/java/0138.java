@@ -30,7 +30,7 @@ class Solution {
             temp = temp.next.next;
         }
 
-        // 3. Remove old nodes.
+        // 3. Separate the original and new nodes to finalize the new list.
         Node newList = head.next;
         Node tempOldList = head;
         Node tempNewList = head.next;
