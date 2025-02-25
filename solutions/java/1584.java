@@ -7,6 +7,8 @@
  * 2/23/2025 Winston Tsui
 */
 
+import java.util.*;
+
 class Solution {
     public int minCostConnectPoints(int[][] points) {
         HashMap<Integer, List<int[]>> graph = new HashMap<>(); // [node, [neiDist, neiNode]]
