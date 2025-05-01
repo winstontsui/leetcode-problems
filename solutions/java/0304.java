@@ -3,7 +3,7 @@
  * O(1) query time and O(M × N) preprocessing time and space.
  * Make a 2D prefix sum matrix with initial padding of 0s.
  * A cell at (r+1, c+1) stores the sum of all elements from (0,0) to (r,c).
- * 4/29/2025 Winston Tsui
+ * 4/30/2025 Winston Tsui
  */
 
 class NumMatrix {
