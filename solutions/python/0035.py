@@ -6,9 +6,6 @@
  * Input: nums = [1,3,5,6], target = 5
  * Output: 2
  *
- * Input: nums = [1,3,5,6], target = 2
- * Output: 1
- *
  * 6/26/2025 Winston Tsui
 """
 
